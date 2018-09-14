@@ -1,0 +1,139 @@
+Read 5 4 3
+
+0
+Read A 2 B 1
+
+1
+Read A 3 C 1
+
+0
+Read A 2 A 1
+
+0
+Read B 2 C 0
+
+1
+Read B 1 C 1
+
+1
+Read B 1 C 5
+
+0
+Read (T.T)\(^_^) (-.-;)y-~~(^_<)
+
+0
+Read A 2 B 1 A 2 B 1
+
+0
+Read A B A B
+
+B ("B"[0]) is not a digit
+0
+Read AA BB CGHD
+
+0
+Read A 3 B
+
+0
+Read A 3 B 0
+
+1
+Read A
+
+0
+Read B
+
+0
+Read 1
+
+0
+Read 2
+
+0
+Read  543
+
+0
+Read  A 2 B 1
+
+1
+Read A 0 B 3
+
+1
+Read A 0.00001 B 0.000001
+
+. ("0.00001"[1]) is not a digit
+0
+Read A -1 B -3
+
+- ("-1"[0]) is not a digit
+0
+Read endtest
+
+0
+Read A 2 B 1
+
+1
+Read A 3 C 1
+
+0
+Read A 2 A 1
+
+0
+Read B 2 C 0
+
+1
+Read B 1 C 1
+
+1
+Read B 1 C 5
+
+0
+Read (T.T)\(^_^) (-.-;)y-~~(^_<)
+
+0
+Read A 2 B 1 A 2 B 1
+
+0
+Read A B A B
+
+B ("B"[0]) is not a digit
+0
+Read AA BB CGHD
+
+0
+Read A 3 B
+
+0
+Read A 3 B 0
+
+1
+Read A
+
+0
+Read B
+
+0
+Read 1
+
+0
+Read 2
+
+0
+Read  543
+
+0
+Read  A 2 B 1
+
+1
+Read A 0 B 3
+
+1
+Read A 0.00001 B 0.000001
+
+. ("0.00001"[1]) is not a digit
+0
+Read A -1 B -3
+
+- ("-1"[0]) is not a digit
+0
+A[0] wrong answer!
