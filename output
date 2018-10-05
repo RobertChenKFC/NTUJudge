@@ -1,65 +1,520 @@
-Index 0 tries 1
-Index 1 tries 2
-Index 2 tries 3
-Index 3 tries 4
-Index 2 tries 4
-Index 3 tries 3
-Index 1 tries 3
-Index 2 tries 2
-Index 3 tries 4
-Index 2 tries 4
-Index 3 tries 2
-Index 1 tries 4
-Index 2 tries 2
-Index 3 tries 3
-Index 2 tries 3
-Index 3 tries 2
-Index 0 tries 2
-Index 1 tries 1
-Index 2 tries 3
-Index 3 tries 4
-Index 2 tries 4
-Index 3 tries 3
-Index 1 tries 3
-Index 2 tries 1
-Index 3 tries 4
-Index 2 tries 4
-Index 3 tries 1
-Index 1 tries 4
-Index 2 tries 1
-Index 3 tries 3
-Index 2 tries 3
-Index 3 tries 1
-Index 0 tries 3
-Index 1 tries 1
-Index 2 tries 2
-Index 3 tries 4
-Index 2 tries 4
-Index 3 tries 2
-Index 1 tries 2
-Index 2 tries 1
-Index 3 tries 4
-Index 2 tries 4
-Index 3 tries 1
-Index 1 tries 4
-Index 2 tries 1
-Index 3 tries 2
-Index 2 tries 2
-Index 3 tries 1
-Index 0 tries 4
-Index 1 tries 1
-Index 2 tries 2
-Index 3 tries 3
-Index 2 tries 3
-Index 3 tries 2
-Index 1 tries 2
-Index 2 tries 1
-Index 3 tries 3
-Index 2 tries 3
-Index 3 tries 1
-Index 1 tries 3
-Index 2 tries 1
-Index 3 tries 2
-Index 2 tries 2
-Index 3 tries 1
-2147483647
+Cross: -2.000000
+Cross: -2.000000
+Cross: 2.000000
+Cross: 2.000000
+clockwise: 2, counterclockwise: 2
+Cross: -2.000000
+Cross: -2.000000
+Cross: 2.000000
+Cross: 2.000000
+clockwise: 2, counterclockwise: 2
+Cross: -2.000000
+Cross: 2.000000
+Cross: -2.000000
+Cross: 2.000000
+clockwise: 2, counterclockwise: 2
+Cross: -2.000000
+Cross: 2.000000
+Cross: 2.000000
+Cross: -2.000000
+clockwise: 2, counterclockwise: 2
+Cross: -2.000000
+Cross: 2.000000
+Cross: -2.000000
+Cross: 2.000000
+clockwise: 2, counterclockwise: 2
+Cross: -2.000000
+Cross: 2.000000
+Cross: 2.000000
+Cross: -2.000000
+clockwise: 2, counterclockwise: 2
+Cross: -2.000000
+Cross: -2.000000
+Cross: 2.000000
+Cross: 2.000000
+clockwise: 2, counterclockwise: 2
+Cross: -2.000000
+Cross: -2.000000
+Cross: 2.000000
+Cross: 2.000000
+clockwise: 2, counterclockwise: 2
+Cross: -2.000000
+Cross: 2.000000
+Cross: -2.000000
+Cross: 2.000000
+clockwise: 2, counterclockwise: 2
+Cross: -2.000000
+Cross: 2.000000
+Cross: 2.000000
+Cross: -2.000000
+clockwise: 2, counterclockwise: 2
+Cross: -2.000000
+Cross: 2.000000
+Cross: -2.000000
+Cross: 2.000000
+clockwise: 2, counterclockwise: 2
+Cross: -2.000000
+Cross: 2.000000
+Cross: 2.000000
+Cross: -2.000000
+clockwise: 2, counterclockwise: 2
+Cross: 2.000000
+Cross: -2.000000
+Cross: -2.000000
+Cross: 2.000000
+clockwise: 2, counterclockwise: 2
+Cross: 2.000000
+Cross: -2.000000
+Cross: 2.000000
+Cross: -2.000000
+clockwise: 2, counterclockwise: 2
+Cross: 2.000000
+Cross: -2.000000
+Cross: -2.000000
+Cross: 2.000000
+clockwise: 2, counterclockwise: 2
+Cross: 2.000000
+Cross: -2.000000
+Cross: 2.000000
+Cross: -2.000000
+clockwise: 2, counterclockwise: 2
+Cross: 2.000000
+Cross: 2.000000
+Cross: -2.000000
+Cross: -2.000000
+clockwise: 2, counterclockwise: 2
+Cross: 2.000000
+Cross: 2.000000
+Cross: -2.000000
+Cross: -2.000000
+clockwise: 2, counterclockwise: 2
+Cross: 2.000000
+Cross: -2.000000
+Cross: -2.000000
+Cross: 2.000000
+clockwise: 2, counterclockwise: 2
+Cross: 2.000000
+Cross: -2.000000
+Cross: 2.000000
+Cross: -2.000000
+clockwise: 2, counterclockwise: 2
+Cross: 2.000000
+Cross: -2.000000
+Cross: -2.000000
+Cross: 2.000000
+clockwise: 2, counterclockwise: 2
+Cross: 2.000000
+Cross: -2.000000
+Cross: 2.000000
+Cross: -2.000000
+clockwise: 2, counterclockwise: 2
+Cross: 2.000000
+Cross: 2.000000
+Cross: -2.000000
+Cross: -2.000000
+clockwise: 2, counterclockwise: 2
+Cross: 2.000000
+Cross: 2.000000
+Cross: -2.000000
+Cross: -2.000000
+clockwise: 2, counterclockwise: 2
+points: 
+1.000000 0.000000
+0.000000 1.000000
+0.000000 -1.000000
+-1.000000 0.000000
+Cross with (1.000000, 0.000000) as base: 0.000000
+Cross with (0.000000, 1.000000) as base: 0.000000
+Cross with (0.000000, -1.000000) as base: 0.000000
+Cross with (-1.000000, 0.000000) as base: 0.000000
+clockwise: 0, counterclockwise: 0
+Cross: -4.000000
+Cross: 4.000000
+Cross: 4.000000
+Cross: -4.000000
+clockwise: 2, counterclockwise: 2
+Cross: -4.000000
+Cross: 4.000000
+Cross: -4.000000
+Cross: 4.000000
+clockwise: 2, counterclockwise: 2
+Cross: -4.000000
+Cross: 4.000000
+Cross: 4.000000
+Cross: -4.000000
+clockwise: 2, counterclockwise: 2
+Cross: -4.000000
+Cross: 4.000000
+Cross: -4.000000
+Cross: 4.000000
+clockwise: 2, counterclockwise: 2
+Cross: -4.000000
+Cross: -4.000000
+Cross: 4.000000
+Cross: 4.000000
+clockwise: 2, counterclockwise: 2
+Cross: -4.000000
+Cross: -4.000000
+Cross: 4.000000
+Cross: 4.000000
+clockwise: 2, counterclockwise: 2
+Cross: 4.000000
+Cross: -4.000000
+Cross: 4.000000
+Cross: -4.000000
+clockwise: 2, counterclockwise: 2
+Cross: 4.000000
+Cross: -4.000000
+Cross: -4.000000
+Cross: 4.000000
+clockwise: 2, counterclockwise: 2
+Cross: 4.000000
+Cross: 4.000000
+Cross: -4.000000
+Cross: -4.000000
+clockwise: 2, counterclockwise: 2
+Cross: 4.000000
+Cross: 4.000000
+Cross: -4.000000
+Cross: -4.000000
+clockwise: 2, counterclockwise: 2
+Cross: 4.000000
+Cross: -4.000000
+Cross: -4.000000
+Cross: 4.000000
+clockwise: 2, counterclockwise: 2
+Cross: 4.000000
+Cross: -4.000000
+Cross: 4.000000
+Cross: -4.000000
+clockwise: 2, counterclockwise: 2
+Cross: 4.000000
+Cross: -4.000000
+Cross: 4.000000
+Cross: -4.000000
+clockwise: 2, counterclockwise: 2
+Cross: 4.000000
+Cross: -4.000000
+Cross: -4.000000
+Cross: 4.000000
+clockwise: 2, counterclockwise: 2
+Cross: 4.000000
+Cross: 4.000000
+Cross: -4.000000
+Cross: -4.000000
+clockwise: 2, counterclockwise: 2
+Cross: 4.000000
+Cross: 4.000000
+Cross: -4.000000
+Cross: -4.000000
+clockwise: 2, counterclockwise: 2
+Cross: 4.000000
+Cross: -4.000000
+Cross: -4.000000
+Cross: 4.000000
+clockwise: 2, counterclockwise: 2
+Cross: 4.000000
+Cross: -4.000000
+Cross: 4.000000
+Cross: -4.000000
+clockwise: 2, counterclockwise: 2
+Cross: -4.000000
+Cross: -4.000000
+Cross: 4.000000
+Cross: 4.000000
+clockwise: 2, counterclockwise: 2
+Cross: -4.000000
+Cross: -4.000000
+Cross: 4.000000
+Cross: 4.000000
+clockwise: 2, counterclockwise: 2
+Cross: -4.000000
+Cross: 4.000000
+Cross: -4.000000
+Cross: 4.000000
+clockwise: 2, counterclockwise: 2
+Cross: -4.000000
+Cross: 4.000000
+Cross: 4.000000
+Cross: -4.000000
+clockwise: 2, counterclockwise: 2
+Cross: -4.000000
+Cross: 4.000000
+Cross: -4.000000
+Cross: 4.000000
+clockwise: 2, counterclockwise: 2
+Cross: -4.000000
+Cross: 4.000000
+Cross: 4.000000
+Cross: -4.000000
+clockwise: 2, counterclockwise: 2
+points: 
+0.000000 1.000000
+0.000000 -1.000000
+2.000000 0.000000
+-2.000000 0.000000
+Cross with (0.000000, 1.000000) as base: -0.000000
+Cross with (0.000000, -1.000000) as base: -0.000000
+Cross with (2.000000, 0.000000) as base: 0.000000
+Cross with (-2.000000, 0.000000) as base: 0.000000
+clockwise: 0, counterclockwise: 0
+Cross: 2.000000
+Cross: 2.000000
+Cross: -2.000000
+Cross: -2.000000
+clockwise: 2, counterclockwise: 2
+Cross: 2.000000
+Cross: 2.000000
+Cross: -2.000000
+Cross: -2.000000
+clockwise: 2, counterclockwise: 2
+Cross: 2.000000
+Cross: -2.000000
+Cross: 2.000000
+Cross: -2.000000
+clockwise: 2, counterclockwise: 2
+Cross: 2.000000
+Cross: -2.000000
+Cross: -2.000000
+Cross: 2.000000
+clockwise: 2, counterclockwise: 2
+Cross: 2.000000
+Cross: -2.000000
+Cross: 2.000000
+Cross: -2.000000
+clockwise: 2, counterclockwise: 2
+Cross: 2.000000
+Cross: -2.000000
+Cross: -2.000000
+Cross: 2.000000
+clockwise: 2, counterclockwise: 2
+Cross: 2.000000
+Cross: 2.000000
+Cross: -2.000000
+Cross: -2.000000
+clockwise: 2, counterclockwise: 2
+Cross: 2.000000
+Cross: 2.000000
+Cross: -2.000000
+Cross: -2.000000
+clockwise: 2, counterclockwise: 2
+Cross: 2.000000
+Cross: -2.000000
+Cross: 2.000000
+Cross: -2.000000
+clockwise: 2, counterclockwise: 2
+Cross: 2.000000
+Cross: -2.000000
+Cross: -2.000000
+Cross: 2.000000
+clockwise: 2, counterclockwise: 2
+Cross: 2.000000
+Cross: -2.000000
+Cross: 2.000000
+Cross: -2.000000
+clockwise: 2, counterclockwise: 2
+Cross: 2.000000
+Cross: -2.000000
+Cross: -2.000000
+Cross: 2.000000
+clockwise: 2, counterclockwise: 2
+Cross: -2.000000
+Cross: 2.000000
+Cross: 2.000000
+Cross: -2.000000
+clockwise: 2, counterclockwise: 2
+Cross: -2.000000
+Cross: 2.000000
+Cross: -2.000000
+Cross: 2.000000
+clockwise: 2, counterclockwise: 2
+Cross: -2.000000
+Cross: 2.000000
+Cross: 2.000000
+Cross: -2.000000
+clockwise: 2, counterclockwise: 2
+Cross: -2.000000
+Cross: 2.000000
+Cross: -2.000000
+Cross: 2.000000
+clockwise: 2, counterclockwise: 2
+Cross: -2.000000
+Cross: -2.000000
+Cross: 2.000000
+Cross: 2.000000
+clockwise: 2, counterclockwise: 2
+Cross: -2.000000
+Cross: -2.000000
+Cross: 2.000000
+Cross: 2.000000
+clockwise: 2, counterclockwise: 2
+Cross: -2.000000
+Cross: 2.000000
+Cross: 2.000000
+Cross: -2.000000
+clockwise: 2, counterclockwise: 2
+Cross: -2.000000
+Cross: 2.000000
+Cross: -2.000000
+Cross: 2.000000
+clockwise: 2, counterclockwise: 2
+Cross: -2.000000
+Cross: 2.000000
+Cross: 2.000000
+Cross: -2.000000
+clockwise: 2, counterclockwise: 2
+Cross: -2.000000
+Cross: 2.000000
+Cross: -2.000000
+Cross: 2.000000
+clockwise: 2, counterclockwise: 2
+Cross: -2.000000
+Cross: -2.000000
+Cross: 2.000000
+Cross: 2.000000
+clockwise: 2, counterclockwise: 2
+Cross: -2.000000
+Cross: -2.000000
+Cross: 2.000000
+Cross: 2.000000
+clockwise: 2, counterclockwise: 2
+points: 
+2.000000 0.000000
+0.000000 0.000000
+2.000000 1.000000
+0.000000 1.000000
+Cross with (2.000000, 0.000000) as base: 0.000000
+Cross with (0.000000, 0.000000) as base: 0.000000
+Cross with (2.000000, 1.000000) as base: -0.000000
+Cross with (0.000000, 1.000000) as base: 0.000000
+clockwise: 0, counterclockwise: 0
+Cross: -2.000000
+Cross: -2.000000
+Cross: 22.000000
+Cross: 22.000000
+clockwise: 2, counterclockwise: 2
+Cross: -2.000000
+Cross: -2.000000
+Cross: 22.000000
+Cross: 22.000000
+clockwise: 2, counterclockwise: 2
+Cross: -2.000000
+Cross: 22.000000
+Cross: -2.000000
+Cross: 22.000000
+clockwise: 2, counterclockwise: 2
+Cross: -2.000000
+Cross: 22.000000
+Cross: 22.000000
+Cross: -2.000000
+clockwise: 2, counterclockwise: 2
+Cross: -2.000000
+Cross: 22.000000
+Cross: -2.000000
+Cross: 22.000000
+clockwise: 2, counterclockwise: 2
+Cross: -2.000000
+Cross: 22.000000
+Cross: 22.000000
+Cross: -2.000000
+clockwise: 2, counterclockwise: 2
+Cross: -2.000000
+Cross: -2.000000
+Cross: 22.000000
+Cross: 22.000000
+clockwise: 2, counterclockwise: 2
+Cross: -2.000000
+Cross: -2.000000
+Cross: 22.000000
+Cross: 22.000000
+clockwise: 2, counterclockwise: 2
+Cross: -2.000000
+Cross: 22.000000
+Cross: -2.000000
+Cross: 22.000000
+clockwise: 2, counterclockwise: 2
+Cross: -2.000000
+Cross: 22.000000
+Cross: 22.000000
+Cross: -2.000000
+clockwise: 2, counterclockwise: 2
+Cross: -2.000000
+Cross: 22.000000
+Cross: -2.000000
+Cross: 22.000000
+clockwise: 2, counterclockwise: 2
+Cross: -2.000000
+Cross: 22.000000
+Cross: 22.000000
+Cross: -2.000000
+clockwise: 2, counterclockwise: 2
+Cross: 22.000000
+Cross: -2.000000
+Cross: -2.000000
+Cross: 22.000000
+clockwise: 2, counterclockwise: 2
+Cross: 22.000000
+Cross: -2.000000
+Cross: 22.000000
+Cross: -2.000000
+clockwise: 2, counterclockwise: 2
+Cross: 22.000000
+Cross: -2.000000
+Cross: -2.000000
+Cross: 22.000000
+clockwise: 2, counterclockwise: 2
+Cross: 22.000000
+Cross: -2.000000
+Cross: 22.000000
+Cross: -2.000000
+clockwise: 2, counterclockwise: 2
+Cross: 22.000000
+Cross: 22.000000
+Cross: -2.000000
+Cross: -2.000000
+clockwise: 2, counterclockwise: 2
+Cross: 22.000000
+Cross: 22.000000
+Cross: -2.000000
+Cross: -2.000000
+clockwise: 2, counterclockwise: 2
+Cross: 22.000000
+Cross: -2.000000
+Cross: -2.000000
+Cross: 22.000000
+clockwise: 2, counterclockwise: 2
+Cross: 22.000000
+Cross: -2.000000
+Cross: 22.000000
+Cross: -2.000000
+clockwise: 2, counterclockwise: 2
+Cross: 22.000000
+Cross: -2.000000
+Cross: -2.000000
+Cross: 22.000000
+clockwise: 2, counterclockwise: 2
+Cross: 22.000000
+Cross: -2.000000
+Cross: 22.000000
+Cross: -2.000000
+clockwise: 2, counterclockwise: 2
+Cross: 22.000000
+Cross: 22.000000
+Cross: -2.000000
+Cross: -2.000000
+clockwise: 2, counterclockwise: 2
+Cross: 22.000000
+Cross: 22.000000
+Cross: -2.000000
+Cross: -2.000000
+clockwise: 2, counterclockwise: 2
+points: 
+2.000000 -10.000000
+2.000000 1.000000
+0.000000 0.000000
+0.000000 1.000000
+Cross with (2.000000, -10.000000) as base: 0.000000
+Cross with (2.000000, 1.000000) as base: -0.000000
+Cross with (0.000000, 0.000000) as base: -0.000000
+Cross with (0.000000, 1.000000) as base: 0.000000
+clockwise: 0, counterclockwise: 0
