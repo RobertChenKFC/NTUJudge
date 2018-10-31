@@ -1,108 +1,82 @@
 #include <stdio.h>
-#include <string.h>
 #include <stdlib.h>
+#include <string.h>
 
 typedef struct Node {
-  int from;
-  int to;
   char c;
-  struct Node *left;
-  struct Node *right;
+  int len;
+  int leftLen, rightLen;
+  struct Node *left, *right;
 } Node;
 
-void Add(Node *node, int inc) {
-  if (node == NULL) return;
-  node->from += inc;
-  node->to += inc;
-  Add(node->left, inc);
-  Add(node->right, inc);
+void Print(Node *root) {
+  if (root == NULL) return;
+  Print(root->left);
+  printf("%c %d ", root->c, root->len);
+  Print(root->right);
 }
 
-Node* InsertRight(Node *node, char c, int n) {
-  if (node == NULL) {
-    node = malloc(sizeof(Node));
-    node->from = 0;
-    node->to = n - 1;
-    node->c = c;
-    node->left = node->right = NULL;
-    return node;
-  }
+Node* Insert(Node *root, int k, char c, int len) {
+  if (root == NULL) {
+    root = malloc(sizeof(Node));
+    root->c = c;
+    root->len = len;
+    root->leftLen = root->rightLen = 0;
+    root->left = root->right = NULL;
+  } else if (root->c == c && (root->leftLen <= k && k <= root->leftLen + root->len)) {
+#ifdef DEBUG
+    printf("%d: Extending %c %d (left: %d, right %d)\n", k, root->c, root->len, root->leftLen, root->rightLen);
+#endif
 
-  Node *root = node;
-  while (node->left != NULL || node->right != NULL)
-    node = node->right; 
-  if (node->c == c) {
-    node->to += n;
+    root->len += len;
+  } else if (k <= root->leftLen || (k == 0 && root->left == NULL)) {
+#ifdef DEBUG
+    printf("%d: Inserting left of %c %d (left: %d, right: %d)\n", k, root->c, root->len, root->leftLen, root->rightLen);
+#endif
+
+    root->left = Insert(root->left, k, c, len);
+    root->leftLen += len;
+  } else if (k >= root->leftLen + root->len) {
+#ifdef DEBUG
+    printf("%d: Inserting right of %c %d (left: %d, right: %d)\n", k, root->c, root->len, root->leftLen, root->rightLen);
+#endif
+
+    root->right = Insert(root->right, k - root->leftLen - root->len, c, len); // test
+    root->rightLen += len;
   } else {
-    node->right= malloc(sizeof(Node)); 
-    node->right->from = node->to + 1;
-    node->right->to = node->to + n;
-    node->right->c = c;
-    node->right->left = node->right->right = NULL;
+#ifdef DEBUG
+    printf("%d: Splitting %c %d (left: %d, right: %d)\n", k, root->c, root->len, root->leftLen, root->rightLen);
+#endif
+
+    // left
+    Node *leftMost = root->left;
+    root->left = malloc(sizeof(Node));
+    root->left->c = root->c;
+    root->left->len = k - root->leftLen;
+    root->left->leftLen = (leftMost == NULL) ? 0 : (leftMost->leftLen + leftMost->len + leftMost->rightLen);
+    root->left->rightLen = 0;
+    root->left->left = leftMost;
+    root->left->right = NULL;
+    // right
+    Node *rightMost = root->right;
+    root->right = malloc(sizeof(Node));
+    root->right->c = root->c;
+    root->right->len = root->leftLen + root->len - k;
+    root->right->leftLen = 0;
+    root->right->rightLen = (rightMost == NULL) ? 0 : (rightMost->leftLen + rightMost->len + rightMost->rightLen);
+    root->right->left = NULL;
+    root->right->right = rightMost;
+    // mid
+    root->c = c;
+    root->len = len;
+    root->leftLen = root->left->leftLen + root->left->len + root->left->rightLen;
+    root->rightLen = root->right->leftLen + root->right->len + root->right->rightLen;
   }
   return root;
 }
 
-Node* Insert(Node *node, char c, int from, int to) {
-  if (node == NULL) {
-    node = malloc(sizeof(Node));
-    node->from = from;
-    node->to = to;
-    node->c = c;
-    node->left = node->right = NULL;
-    return node;
-  }
-
-  if (node->c == c && (node->from == to + 1 || node->to == from - 1)) {
-    int inc = to - from + 1;
-    node->to += inc;
-    Add(node->right, inc);
-  } else if (from < node->from) {
-    node->left = Insert(node->left, c, from, to);
-  } else if (from > node->to) {
-    node->right = Insert(node->right, c, from, to);
-  } else if (node->c == c) {
-    int inc = to - from + 1;
-    node->to += inc;
-    Add(node->right, inc);
-  } else {
-    Node *leftMost = node->left;
-    Node *rightMost = node->right;
-    if (from - 1 >= node->from) {
-      Node *left = malloc(sizeof(Node));
-      left->from = node->from;
-      left->to = from - 1;
-      left->c = node->c;
-      left->left = leftMost;
-      left->right = NULL;
-      node->left = left;
-    }
-    if (node->to >= from) {
-      Node *right = malloc(sizeof(Node));
-      right->from = from;
-      right->to = node->to;
-      right->c = node->c;
-      right->left = NULL;
-      right->right = rightMost;
-      node->right = right;
-      Add(node->right, to - from + 1);
-    }
-    node->from = from;
-    node->to = to;
-    node->c = c;
-  }
-  return node;
-}
-
-void Print(Node *node) {
-  if (node == NULL) return;
-  Print(node->left);
-  printf("%c %d ", node->c, node->to - node->from + 1);
-  Print(node->right);
-}
-
 int main() {
-  char instruction[10];
+  char instruction[128];
   Node *root = NULL;
   while (scanf("%s", instruction) != EOF) {
     if (strcmp(instruction, "print") == 0) {
@@ -110,35 +84,19 @@ int main() {
       printf("$\n");
     } else if (strcmp(instruction, "insert") == 0) {
       char c;
-      int n;
-      scanf("%s %c%d", instruction, &c, &n);
-      if (strcmp(instruction, "left") == 0) {
-        root = Insert(root, c, 0, n - 1);
-
-#ifdef DEBUG
-        printf("After inserting %c from %d to %d: ", c, 0, n - 1);
-        Print(root);
-        printf("$\n");
-#endif
-      } else if (strcmp(instruction, "right") == 0) {
-        root = InsertRight(root, c, n); 
-
-#ifdef DEBUG
-        printf("After inserting %d %c from the right: ", n, c);
-        Print(root);
-        printf("$\n");
-#endif
-      } else {
-        int k = atoi(instruction); 
-        root = Insert(root, c, k - 1, k + n - 2);
-
-#ifdef DEBUG
-        printf("After inserting %c from %d to %d: ", c, k - 1, k + n - 2);
-        Print(root);
-        printf("$\n");
-#endif
-      }
+      int k, len;  
+      scanf("%s %c%d", instruction, &c, &len);
+      if (strcmp(instruction, "left") == 0) k = 0;
+      else if (strcmp(instruction, "right") == 0) k = (root == NULL) ? 0 : (root->leftLen + root->len + root->rightLen);
+      else k = atoi(instruction) - 1;
+      root = Insert(root, k, c, len);
     }
+  
+#ifdef DEBUG
+    printf("Current: ");
+    Print(root);
+    printf("$\n");
+#endif
   }
 }
 
