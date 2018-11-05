@@ -1,0 +1,15 @@
+set has 2
+set has 3
+set has 5
+set has 7
+set has 9
+set does not have 2
+set has 3
+set does not have 5
+set does not have 7
+set does not have 9
+set has 2
+set does not have 3
+set has 5
+set has 7
+set has 9
