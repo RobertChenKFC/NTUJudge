@@ -1,12 +1,12 @@
-6
-100 John Smith 200
-200 Adam Joshson 300
-300 Jane Washington 300
-400 Mary Miller 300
-500 Eric Page 500
-600 James Clark 500
-4
-John Smith Jane Washington
-Jane Washington Adam Joshson
-Adam Joshson Mary Miller
-Mary Miller James Clark
+7
+6 1
+3 2
+4 4
+1 3
+2 4
+7 2
+5 3
+3
+3 6
+5 7
+2 4
