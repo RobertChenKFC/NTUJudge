@@ -1,244 +1,35 @@
-All chars (total of 2): C D
-Trying this: 
-C -> 1
-D -> 1
-Trying this: 
-C -> 1
-D -> 2
-Trying this: 
-C -> 1
-D -> 3
-Trying this: 
-C -> 1
-D -> 4
-Trying this: 
-C -> 1
-D -> 5
-Trying this: 
-C -> 1
-D -> 6
-Trying this: 
-C -> 1
-D -> 7
-Trying this: 
-C -> 1
-D -> 8
-Trying this: 
-C -> 1
-D -> 9
-Trying this: 
-C -> 2
-D -> 1
-Trying this: 
-C -> 2
-D -> 2
-Trying this: 
-C -> 2
-D -> 3
-Trying this: 
-C -> 2
-D -> 4
-Trying this: 
-C -> 2
-D -> 5
-Trying this: 
-C -> 2
-D -> 6
-Trying this: 
-C -> 2
-D -> 7
-Trying this: 
-C -> 2
-D -> 8
-Trying this: 
-C -> 2
-D -> 9
-Trying this: 
-C -> 3
-D -> 1
-Trying this: 
-C -> 3
-D -> 2
-Trying this: 
-C -> 3
-D -> 3
-Trying this: 
-C -> 3
-D -> 4
-Trying this: 
-C -> 3
-D -> 5
-Trying this: 
-C -> 3
-D -> 6
-Trying this: 
-C -> 3
-D -> 7
-Trying this: 
-C -> 3
-D -> 8
-Trying this: 
-C -> 3
-D -> 9
-Trying this: 
-C -> 4
-D -> 1
-Trying this: 
-C -> 4
-D -> 2
-Trying this: 
-C -> 4
-D -> 3
-Trying this: 
-C -> 4
-D -> 4
-Trying this: 
-C -> 4
-D -> 5
-Trying this: 
-C -> 4
-D -> 6
-Trying this: 
-C -> 4
-D -> 7
-Trying this: 
-C -> 4
-D -> 8
-Trying this: 
-C -> 4
-D -> 9
-Trying this: 
-C -> 5
-D -> 1
-Trying this: 
-C -> 5
-D -> 2
-Trying this: 
-C -> 5
-D -> 3
-Trying this: 
-C -> 5
-D -> 4
-Trying this: 
-C -> 5
-D -> 5
-Trying this: 
-C -> 5
-D -> 6
-Trying this: 
-C -> 5
-D -> 7
-Trying this: 
-C -> 5
-D -> 8
-Trying this: 
-C -> 5
-D -> 9
-Trying this: 
-C -> 6
-D -> 1
-Trying this: 
-C -> 6
-D -> 2
-Trying this: 
-C -> 6
-D -> 3
-Trying this: 
-C -> 6
-D -> 4
-Trying this: 
-C -> 6
-D -> 5
-Trying this: 
-C -> 6
-D -> 6
-Trying this: 
-C -> 6
-D -> 7
-Trying this: 
-C -> 6
-D -> 8
-Trying this: 
-C -> 6
-D -> 9
-Trying this: 
-C -> 7
-D -> 1
-Trying this: 
-C -> 7
-D -> 2
-Trying this: 
-C -> 7
-D -> 3
-Trying this: 
-C -> 7
-D -> 4
-Trying this: 
-C -> 7
-D -> 5
-Trying this: 
-C -> 7
-D -> 6
-Trying this: 
-C -> 7
-D -> 7
-Trying this: 
-C -> 7
-D -> 8
-Trying this: 
-C -> 7
-D -> 9
-Trying this: 
-C -> 8
-D -> 1
-Trying this: 
-C -> 8
-D -> 2
-Trying this: 
-C -> 8
-D -> 3
-Trying this: 
-C -> 8
-D -> 4
-Trying this: 
-C -> 8
-D -> 5
-Trying this: 
-C -> 8
-D -> 6
-Trying this: 
-C -> 8
-D -> 7
-Trying this: 
-C -> 8
-D -> 8
-Trying this: 
-C -> 8
-D -> 9
-Trying this: 
-C -> 9
-D -> 1
-Trying this: 
-C -> 9
-D -> 2
-Trying this: 
-C -> 9
-D -> 3
-Trying this: 
-C -> 9
-D -> 4
-Trying this: 
-C -> 9
-D -> 5
-Trying this: 
-C -> 9
-D -> 6
-Trying this: 
-C -> 9
-D -> 7
-Trying this: 
-C -> 9
-D -> 8
-Trying this: 
-C -> 9
-D -> 9
+all variables: 
+
+current expression (length 67): ( - ( * ( * ( / ( - 2147483647 2 ) 2 ) ( - 2 1 ) ) 2 ) 2147483647 )
+operator is -
+current expression (length 48):  * ( * ( / ( - 2147483647 2 ) 2 ) ( - 2 1 ) ) 2 
+operator is *
+current expression (length 40):  * ( / ( - 2147483647 2 ) 2 ) ( - 2 1 ) 
+operator is *
+current expression (length 24):  / ( - 2147483647 2 ) 2 
+operator is /
+current expression (length 16):  - 2147483647 2 
+operator is -
+current expression (length 10): 2147483647
+current expression is a number: 2147483647
+current expression (length 1): 2
+current expression is a number: 2
+ - 2147483647 2  = 2147483645
+current expression (length 1): 2
+current expression is a number: 2
+ / ( - 2147483647 2 ) 2  = 1073741822
+current expression (length 7):  - 2 1 
+operator is -
+current expression (length 1): 2
+current expression is a number: 2
+current expression (length 1): 1
+current expression is a number: 1
+ - 2 1  = 1
+ * ( / ( - 2147483647 2 ) 2 ) ( - 2 1 )  = 1073741822
+current expression (length 1): 2
+current expression is a number: 2
+ * ( * ( / ( - 2147483647 2 ) 2 ) ( - 2 1 ) ) 2  = 2147483644
+current expression (length 10): 2147483647
+current expression is a number: 2147483647
+( - ( * ( * ( / ( - 2147483647 2 ) 2 ) ( - 2 1 ) ) 2 ) 2147483647 ) = -3
+-3
