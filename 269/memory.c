@@ -1,13 +1,14 @@
 #include "memory.h"
 
-#include <stdio.h>
 #include <stdlib.h>
+#include <stdio.h>
 
 void initMemory(Memory *memory, int length) {
   memory->head = malloc(sizeof(FreeBlock));
   memory->head->start = 0;
   memory->head->len = length;
-  memory->head->next = NULL;
+  memory->head->prev = memory->head->next = NULL;
+  memory->len = length;
 }
 
 void printMemory(Memory *memory) {
@@ -82,57 +83,51 @@ void allocateMemory(Memory *memory, int start, int length) {
 }
 
 void freeMemory(Memory *memory, int start, int length) {
-  FreeBlock *cur = memory->head, *prev = NULL;
-  while (cur != NULL &&
-         !(prev == NULL && start < cur->start) &&
-         !(prev != NULL && (prev->start + prev->len <= start && start < cur->start))) {
-    prev = cur;
-    cur = cur->next;
-  }
-  if (prev == NULL && cur == NULL) {
-    // no free blocks left
+  FreeBlock *prev = NULL, *cur = memory->head;
+  if (cur == NULL) {
     memory->head = malloc(sizeof(FreeBlock));
     memory->head->start = start;
     memory->head->len = length;
-    memory->head->next = NULL;
-  } else if (prev == NULL) {
-    // block on the left side
-    if (start + length == cur->start) {
-      cur->start = start;
-      cur->len += length;
-    } else {
-      memory->head = malloc(sizeof(FreeBlock));
-      memory->head->start = start;
-      memory->head->len = length;
-      memory->head->next = cur;
-    }
+    memory->head->prev = memory->head->next = NULL;
+    return;
+  }
+  while (cur != NULL && cur->start <= start) {
+    prev = cur;
+    cur = cur->next; 
+  }
+  if (prev == NULL) {
+    memory->head = malloc(sizeof(FreeBlock));
+    memory->head->start = start;
+    memory->head->len = length;
+    memory->head->prev = NULL;
+    memory->head->next = cur;
   } else if (cur == NULL) {
-    // block on the right side 
-    if (prev->start + prev->len == start) {
-      prev->len += length; 
-    } else {
-      prev->next = malloc(sizeof(FreeBlock));
-      prev->next->start = start;
-      prev->next->len = length;
-      prev->next->next = NULL;
-    }
+    prev->next = malloc(sizeof(FreeBlock));
+    prev->next->start = start;
+    prev->next->len = length;
+    prev->next->prev = prev;
+    prev->next->next = NULL;
   } else {
-    if (prev->start + prev->len == start && start + length == cur->start) {
-      prev->len += length + cur->len;
-      prev->next = cur->next; 
+    FreeBlock *mid = malloc(sizeof(FreeBlock));
+    mid->start = start;
+    mid->len = length;
+    mid->prev = prev;
+    mid->next = cur;
+    prev->next = mid;
+    cur->prev = mid;
+  }
+  prev = memory->head;
+  cur = prev->next;
+  while (cur != NULL) {
+    if (prev->start + prev->len >= cur->start) {
+      prev->len = cur->start - prev->start + cur->len; 
+      prev->next = cur->next;
+      if (cur->next != NULL) cur->next->prev = NULL;
       free(cur);
-    } else if (prev->start + prev->len == start) {
-      prev->len += length;
-      prev->next = cur; // unnecessary?
-    } else if (start + length == cur->start) {
-      cur->len += length;
-      prev->next = cur; // unnecessary?
+      cur = prev->next;
     } else {
-      FreeBlock *mid = malloc(sizeof(FreeBlock));
-      mid->start = start;
-      mid->len = length;
-      prev->next = mid;
-      mid->next = cur; 
+      prev = cur;
+      cur = cur->next;
     }
   }
 }
