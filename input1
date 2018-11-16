@@ -1,11 +1,1 @@
-There are strings in the input,
-one per line, with no more than
-32 characters each. Note that
-there could be spaces in each
-line, so you should use fgets
-or gets to read the input. And
-you should determine the number
-of strings using the return
-value NULL of fgets/gets.  The
-number of strings is no more
-than 64.
+66 33 99
