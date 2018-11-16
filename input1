@@ -1,6 +1,11 @@
-2012 1 1 food 23
-2012 1 1 food 3
-2012 10 10 rent 3000
-2010 10 1 food 34
-2012 1 2 food 5
-2012 10 10 food 10
+There are strings in the input,
+one per line, with no more than
+32 characters each. Note that
+there could be spaces in each
+line, so you should use fgets
+or gets to read the input. And
+you should determine the number
+of strings using the return
+value NULL of fgets/gets.  The
+number of strings is no more
+than 64.
