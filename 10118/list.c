@@ -3,18 +3,23 @@
 #include <stdlib.h>
  
 Node* mk_list(int n) {
-  if (n == 0) {
-    printf("\n");
-    return NULL;
+  if (n == 0) return NULL;
+  Node *prev = malloc(sizeof(Node)), *cur;
+  Node *head = prev;
+  prev->v = sp_rand(), prev->next = NULL;
+  for (int i = 1; i < n; ++i) {
+    cur = malloc(sizeof(Node)); 
+    cur->v = sp_rand(), cur->next = NULL;
+    prev->next = cur, prev = cur;
   }
-  Node *head = malloc(sizeof(Node));
-  head->v = sp_rand();
-  printf("%d -> ", head->v);
-  head->next = mk_list(n - 1);
   return head;
 }
+
 void rm_list(Node *head) {
-  if (head == NULL) return;
-  rm_list(head->next);
-  free(head);
+  Node *cur = head;
+  while (cur != NULL) {
+    Node *next = cur->next;
+    free(cur);
+    cur = next;
+  }
 }
