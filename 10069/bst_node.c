@@ -19,16 +19,7 @@ void bstNode_print(bstNode *self) {
     printf("%d ", *(int *)(self->extra));
 }
 
-void bstNode_destroy(bstNode *obj) {
-    free(obj->extra);
-}
-
 int bstNode_init(bstNode *obj) {
-    Object proto = {
-      .init = NULL,
-      .destroy = bstNode_destroy
-    };
-    obj->proto = proto;
     obj->getLson = bstNode_getLson;
     obj->getRson = bstNode_getRson;
     obj->setLson = bstNode_setLson;
@@ -36,6 +27,10 @@ int bstNode_init(bstNode *obj) {
     obj->print = bstNode_print;
     obj->extra = (void *) malloc(sizeof(int));
     return 1;
+}
+
+void bstNode_destroy(bstNode *obj) {
+    free(obj->extra);
 }
  
 Object bstNodeProto = {
@@ -46,6 +41,7 @@ Object bstNodeProto = {
 bstNode* Insert(bstNode *root, int *val) {
   if (root == NULL) {
     root = malloc(sizeof(bstNode));
+    root->proto = bstNodeProto;
     bstNode_init(root);
     root->extra = val;
     root->lson = root->rson = NULL;
