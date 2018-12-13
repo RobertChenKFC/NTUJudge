@@ -35,7 +35,7 @@ void bstNode_destroy(bstNode *obj) {
  
 Object bstNodeProto = {
     .init = bstNode_init,
-    .destroy = bstNode_destroy
+    .destroy = NULL
 };
 
 bstNode* Insert(bstNode *root, int *val) {
